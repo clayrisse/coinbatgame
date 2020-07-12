@@ -2,90 +2,138 @@
 
 body {
 
-  background: no-repeat center 35% fixed;
+  background: no-repeat center 5% fixed;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.089) 0%, rgba(0, 0, 0, 0.863)  60%, transparent 95%), url(background-coinbat.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.911) 20%, transparent 30%, rgba(0, 0, 0, 0.308) 55%,rgba(0, 0, 0, 0.226) 100%), url(background-coinbat.jpg);
   background-blend-mode: multiply; 
   height: 99vh;
   font-family: 'Montaga', serif;
   font-size: 10px;
-  text-align: left;
+  text-align: center;
   margin: auto;
+}
+
+.formbody{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.24) 30%, rgba(0, 0, 0, 0.678) 45%,rgba(0, 0, 0, 0.63) 100%), url(background-coinbat.jpg);
+
 }
 
   
 .navbar {
-  background-color:  rgba(0, 0, 0, 0.596);
-  font-size: 2rem;
-  opacity: 1;
-  position: fixed;
-  width: 50%;
-  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.356);
+  position: fixed; /*cambiar en res 500 y 1000. y ponerla hidden en 1000*/
+  width: 100%;
+  top: 0px;
   left: 0px;
   
 }
 nav ul {
   /*float: right; recordar quitar y 
   usar bootstrap*/
-  text-align: left;
-  margin: .5em;
-  padding: 5px 0px 5px 0px;
-  margin: 1rem 0 1rem 1rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 nav li {
-  margin: .5em 0;
-  display: block;
+  display: inline-block;
+  padding: .4rem 1em;/*cambiar en res 500 y 100*/ 
+
 }
-a {
-  color: rgb(217, 255, 0);
-  text-decoration: none;
-  margin: 0 2rem 0 2rem;
+a { 
+  color:rgb(218, 192, 77);
+  font-size: 1.2rem;/*cambiar en res 500 y 100*/
+  text-decoration: none;  
+}
+
+.fullview{
+  height: 90vh;
+}
+.homepagelogo{
+  text-align: center;
+  margin:  auto;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 40vh -15px 0;
+}
+#histoyrules {
+  background-color: rgb(0, 0, 0);
+  height: 70vh;
+  margin: 0;
   
 }
+#histoyplayers {
+  background-color: rgb(158, 28, 28);
+  height: 70vh;
+  margin-top: -70px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.596);
+  height: 15vh;
+  
+  
+}
+/*----------F I G H T   S T U F F ------------*/
+.board {
+  background-color: blue;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.player {
+  background-color: blueviolet;
+}
+.fliplingspace {
+  background-color: burlywood;
+}
 
 
 
-/*----------------------*/
 
+
+/*----------F O R M S   S T U F F ------------*/
+.titlepage {
+  color:rgba(209, 199, 148, 0.87); 
+  font-family: 'Montaga', serif;
+  text-align: left;
+  font-size:2rem;
+  margin: 70px auto 20px;
+}
 
 form {
   color: #555;
   font-family: verdana, helvetica;
   font-size: 2rem;
   text-align: right;
-  margin: auto;
+  margin: 30px auto 60px;
   width: 80%;
-  max-width: 500px;
-  
+  max-width: 450px;
 }
-.titlepage {
-  color:rgb(155, 136, 54); 
-  text-align: center;
-  font-size:3rem;
-  line-height: 5.8rem;
-  }
+form div {
+  margin: -.8rem 0;
+}
 
-.inputhead{
-  color: rgba(150, 146, 129, 0.637); 
+
+.inputtitle{
+  color:rgba(209, 199, 148, 0.87); 
   text-align: left;
   font-size: 1rem;
- 
+  
   
 }
 .inputfield{
-  background-color: rgba(136, 127, 93, 0.445);
+  background-color: rgba(133, 126, 100, 0.37);
   color:rgb(196, 193, 178);
-  font-size:1.2rem;
+  font-size:0.8rem;
   width: 100%;
-  padding: 13px 5px;
-  margin: 30px 0 -20px -5px;
+  padding: 10px 4px;
+  margin: 40px 0 0 ;
   border: 0px ;
   text-align: left;
 }
 
 form p {
-  color: rgba(211, 208, 197, 0.877); 
-  margin-top: 50px;
+  color: rgba(201, 197, 186, 0.877); 
+  margin-top: 40px;
   text-align: center;
   font-size: .8rem;
 }
@@ -93,15 +141,16 @@ form a {
   color: rgba(255, 220, 62, 0.733); 
   text-align: center;
   font-size: .8rem;
-  margin: 0 ;
+  margin: 0;
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0.966);
-  color:rgb(136, 127, 93);;
+  background-color: rgba(0, 0, 0, 0.767);
+  color:rgb(243, 211, 94);
+  font-family: 'Montaga', serif;
   font-size: 1.4rem;
-  padding: 10px 0px;
-  margin: 20px 0px 30px;
+  padding: 10px;
+  margin: 40px 0px 0px;
   width: 170px;
   border: none;
   

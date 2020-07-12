@@ -16,54 +16,53 @@
         <title>Mortal Coinbat</title>
     </head>
 
-    <body>
-         <!--navbar ej. <a href="#projects" class="dropdown-item">Project 1</a>   <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#contact">Contact</a></li>-->
-         <nav class="navbar">
+    <body class="formbody">
+        <!-- NO CAMBIAR el body tag pq tiene una clase, solo copia y pega la navbar si cambia -->
+        <header>
+            <!--navbar ej. <a href="#projects" class="dropdown-item">Project 1</a>   <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#contact">Contact</a></li>-->
+            <nav class="navbar">
 
-            <a href="#" class="navbar"><i class=""></i></a>
+                <a href="#" class="navbar"><i class=""></i></a>
 
-            
+                
 
-            <div class="" id="nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="" href="login.html">Log in</a></li>
-                    <li class="nav-item"><a class="" href="signin.html">Sign up</a></li>
-                    <!-- <li class="nav-item"><a class="" href="players.html">Choose player</a></li> -->
-                    <li class="nav-item"><a class="" href="coinbat.html">Fight</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--end of navbar-->
-
-
-        <!-- form -->   
-        <!-- recordar borrar la class "question" luego de verificar en el css -->
-        <form id="form-login" class = "" action="xxxxxxxxxxxxxxx">
-            <div>
-                <div>
-                    <label for="login-email" class="question">Email:</lable>
-                    <input id="login-email" type="email" name="login-email" placeholder="email goes here" required>
+                <div class="" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="" href="coinbat.html">Fight</a></li>
+                        <li class="nav-item"><a class="" href="login.html">Log in</a></li>
+                        <li class="nav-item"><a class="" href="signin.html">Sign in</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="login-password" class="question">Password:</lable>
-                    <input id="login-password" type="text" name="login-password" placeholder="password goes here" required>
-                </div>
-            </div>                      
-            <button id="login-submit" type="submit">Submit</button>      
-        </form>
-            <!-- form 2 -->
+            </nav>
+            <!--end of navbar-->
+        </header>
         
-        <!-- end of form -->
-
-
-
-
-
-
-
-
-
-
-
+        <main>
+            
+            
+            <form id="form-login" class = "" action="xxxxxxxxxxxxxxx">
+                <header>
+                    <h1 class="titlepage">Log In</h1> 
+                </header>
+                <div>
+                    <div>
+                        <input id="login-email" class="inputfield" type="email" name="login-email" placeholder="email goes here" required>
+                    <div>
+                    <div>
+                        <label for="login-email" class="inputtitle">Email</lable>
+                    </div>
+                    
+                    <div>    
+                        <input id="login-password" class="inputfield" type="text" name="login-password" placeholder="password goes here" required>
+                    <div>           
+                    <div>
+                        <label for="login-password" class="inputtitle">Password</lable>
+                    </div> 
+                </div>     
+                <p>Can't get in?<a> Recover password</a></p>               
+                <button id="login-submit" type="submit">Submit</button>      
+            </form>
+        </main>
     </body>
 </html>

@@ -16,79 +16,73 @@
         <title>Mortal Coinbat</title>
     </head>
 
-    <body>
+    <body class="formbody"> 
+        <!-- NO CAMBIAR el body tag pq tiene una clase, solo copia y pega la navbar si cambia -->
+        <header>
+            <!--navbar ej. <a href="#projects" class="dropdown-item">Project 1</a>   <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#contact">Contact</a></li>-->
+            <nav class="navbar">
 
-        <header id="signin-head" class="titlepage">
-            
-            
-            <h1>Sign In</h1>
-            
+                <a href="#" class="navbar"><i class=""></i></a>
+
+                
+
+                <div class="" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="" href="coinbat.html">Fight</a></li>
+                        <li class="nav-item"><a class="" href="login.html">Log in</a></li>
+                        <li class="nav-item"><a class="" href="signin.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end of navbar-->
         </header>
-
+        
         <main>
-            <form id="form-signup" class = "" action="xxxxxxxxxxxxxxx">  
-
+            
+            
+            <form id="form-signin" class = "" action="xxxxxxxxxxxxxxx">  
+                <header>
+                    <h1 class="titlepage">Sign In</h1> 
+                </header>
                 <div>
                      
                     <div>
-                        <input id="signup-name" class="inputfield" type="text" name="signup-name" placeholder="name goes here" required>
+                        <input id="form-signin" class="inputfield" type="text" name="signup-name" placeholder="name goes here" required>
                     </div> 
                     <div>
-                        <label for="signup-name" class="inputhead">Username</lable>
+                        <label for="form-signin" class="inputtitle">Username</lable>
                     </div>
                     
                                   
                 <!-- recordar verificar si el ID del email y y password en el signup y login deben ser los mismos -->
                     <div>
-                        <input id="signup-email" class="inputfield" type="email" name="signup-email" placeholder="email goes here" required>
+                        <input id="form-signin" class="inputfield" type="email" name="signup-email" placeholder="email goes here" required>
                     </div> 
                     <div>
-                        <label for="signup-email" class="inputhead">Email</lable>
+                        <label for="form-signin" class="inputtitle">Email</lable>
                     </div>
 
                     
                     <div>
-                        <input id="signup-password" class="inputfield" type="text" name="signup-password" placeholder="password goes here" required>
+                        <input id="form-signin" class="inputfield" type="text" name="signup-password" placeholder="password goes here" required>
                     </div>
                     <div>
-                        <label for="signup-password" class="inputhead">Password</lable>
+                        <label for="form-signin" class="inputtitle">Password</lable>
                     </div>
 
                     
                     <div>
-                        <input id="signup-password-valid" class="inputfield" type="text" name="signup-password-valid" placeholder="password goes here" required>
+                        <input id="signin-password-valid" class="inputfield" type="text" name="signup-password-valid" placeholder="password goes here" required>
                     </div>
                     <div>
-                        <label for="signup-password-valid" class="inputhead">Confirm Password</lable>
+                        <label for="signin-password-valid" class="inputtitle">Confirm Password</lable>
                     </div>
                      <p><input type="checkbox">  By creating an account you agree to our <a>Terms & Privacy</a>
                     
                 </div>                      
-                <button id="signup-submit" type="submit">Submit</button>
+                <button id="signin-submit" type="submit">Submit</button>
             
-            </form>
-            
-            <div>
-                <p>space</p>
-            </div>
-            
-            <form id="form-login" class = "" action="xxxxxxxxxxxxxxx">
-                <div>
-                    <div>
-                        <input id="login-email" class="inputfield" type="email" name="login-email" placeholder="email goes here" required>
-                    <div>
-                    <div>
-                        <label for="login-email" class="inputhead">Email</lable>
-                    </div>
-                    
-                    <div>    
-                        <input id="login-password" class="inputfield" type="text" name="login-password" placeholder="password goes here" required>
-                    <div>           
-                    <div>
-                        <label for="login-password" class="inputhead">Password</lable>
-                    </div> 
-                </div>                      
-                <button id="login-submit" type="submit">Submit</button>      
             </form>
         </main>
     </body>
