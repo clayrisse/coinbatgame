@@ -76,18 +76,65 @@ footer {
 .board {
   background-color: blue;
   width: 90%;
-  max-width: 800px;
+  max-width: 700px;
+  height: 50%;
   margin: 0 auto;
 }
-.player {
-  background-color: blueviolet;
-}
-.fliplingspace {
-  background-color: burlywood;
-}
+    .player {
+      background-color: blueviolet;
+      height: 30%;
+      display: flex;
+      flex-wrap: wrap
+    }
+    .fliplingspace {
+      background-color: burlywood;
+    }
+      
+        .playeravatar {
+          background-color: cornsilk;
+          flex-grow: 1;
+        }
+        .playerstats{
+          background-color: darkgreen;
+          text-align: right;
+          /* display: flex; */
+          flex-direction: column;
+          align-items: flex-start;
+          flex-grow: 2;
+          
+        }
+            .playerref {
+              background-color: rgb(155, 156, 155);
+            }
+            .wincount {
+              background-color: rgb(251, 255, 1);
+            } 
+            .statsname {
+              /* background-color: rgb(19, 19, 18); */
+              color: rgb(235, 234, 201);
+            }
+            .playerimg {
+              display: flex;
+              height: 150px;
+            }
+            .coinimg {
+              
+              height: 300px;
+            }
+    .reverse {
+      flex-direction: row-reverse;
+    }
 
-
-
+    .reversestats{
+      text-align: left;
+      /* display: flex; */
+      /* flex-wrap: nowrap; */
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+    .playerref{
+      display: ;
+    }
 
 
 /*----------F O R M S   S T U F F ------------*/

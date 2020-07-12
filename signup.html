@@ -31,59 +31,62 @@
                         <li class="nav-item"><a class="" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="" href="coinbat.html">Fight</a></li>
                         <li class="nav-item"><a class="" href="login.html">Log in</a></li>
-                        <li class="nav-item"><a class="" href="signin.html">Sign in</a></li>
+                        <li class="nav-item"><a class="" href="signup.html">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <!--end of navbar-->
         </header>
         
-        <main>
-            
-            
-            <form id="form-signin" class = "" action="xxxxxxxxxxxxxxx">  
+        <main>            
+            <form id="form-signup" class = "" action="xxxxxxxxxxxxxxx">  
                 <header>
-                    <h1 class="titlepage">Sign In</h1> 
+                    <h1 class="titlepage">Sign Up</h1> 
                 </header>
-                <div>
-                     
+
+                <div>                
                     <div>
-                        <input id="form-signin" class="inputfield" type="text" name="signup-name" placeholder="name goes here" required>
+                        <input id="name" class="inputfield" type="text" name="signup-name" placeholder="name goes here" required>
                     </div> 
                     <div>
-                        <label for="form-signin" class="inputtitle">Username</lable>
+                        <label for="name" class="inputtitle">Username</lable>
                     </div>
                     
                                   
                 <!-- recordar verificar si el ID del email y y password en el signup y login deben ser los mismos -->
                     <div>
-                        <input id="form-signin" class="inputfield" type="email" name="signup-email" placeholder="email goes here" required>
+                        <input id="email" class="inputfield" type="email" name="signup-email" placeholder="email goes here" required>
                     </div> 
                     <div>
-                        <label for="form-signin" class="inputtitle">Email</lable>
+                        <label for="email" class="inputtitle">Email</lable>
                     </div>
 
                     
                     <div>
-                        <input id="form-signin" class="inputfield" type="text" name="signup-password" placeholder="password goes here" required>
+                        <input id="password" class="inputfield" type="text" name="signup-password" placeholder="password goes here" required>
                     </div>
                     <div>
-                        <label for="form-signin" class="inputtitle">Password</lable>
+                        <label for="password" class="inputtitle">Password</lable>
                     </div>
 
                     
                     <div>
-                        <input id="signin-password-valid" class="inputfield" type="text" name="signup-password-valid" placeholder="password goes here" required>
+                        <input id="repeat-password" class="inputfield" type="text" name="signup-repeat-password" placeholder="password goes here" required>
                     </div>
                     <div>
-                        <label for="signin-password-valid" class="inputtitle">Confirm Password</lable>
+                        <label for="repeat-password" class="inputtitle">Confirm Password</lable>
                     </div>
-                     <p><input type="checkbox">  By creating an account you agree to our <a>Terms & Privacy</a>
-                    
-                </div>                      
-                <button id="signin-submit" type="submit">Submit</button>
-            
+                    <p><input type="checkbox"> By creating an account you agree to our <a>Terms & Privacy</a></p>
+                    <button id="signup-button" type="submit">Submit</button>
+                </div>                   
             </form>
+            <div class="message-container">
+                
+            </div>
         </main>
+        <script src="js/Signup.js"></script>
+        <script src="js/User.js"></script>
+        <script src="js/Database.js"></script>
+        <!-- <script src="js/Validator.js"></script> -->
     </body>
 </html>
