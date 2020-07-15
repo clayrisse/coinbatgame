@@ -46,7 +46,7 @@
 
                 <div>                
                     <div>
-                        <input id="name" class="inputfield" type="text" name="signup-name" placeholder="name goes here" required>
+                        <input id="name" class="inputfield" type="text" name="signup-name" placeholder="name goes here" >
                     </div> 
                     <div>
                         <label for="name" class="inputtitle">Username</lable>
@@ -55,7 +55,7 @@
                                   
                 <!-- recordar verificar si el ID del email y y password en el signup y login deben ser los mismos -->
                     <div>
-                        <input id="email" class="inputfield" type="email" name="signup-email" placeholder="email goes here" required>
+                        <input id="email" class="inputfield" type="email" name="signup-email" placeholder="email goes here" >
                     </div> 
                     <div>
                         <label for="email" class="inputtitle">Email</lable>
@@ -63,7 +63,7 @@
 
                     
                     <div>
-                        <input id="password" class="inputfield" type="text" name="signup-password" placeholder="password goes here" required>
+                        <input id="password" class="inputfield" type="password" name="signup-password" placeholder="password goes here" >
                     </div>
                     <div>
                         <label for="password" class="inputtitle">Password</lable>
@@ -71,22 +71,22 @@
 
                     
                     <div>
-                        <input id="repeat-password" class="inputfield" type="text" name="signup-repeat-password" placeholder="password goes here" required>
+                        <input id="repeat-password" class="inputfield" type="password" name="signup-repeat-password" placeholder="password goes here" >
                     </div>
                     <div>
                         <label for="repeat-password" class="inputtitle">Confirm Password</lable>
                     </div>
                     <p><input type="checkbox"> By creating an account you agree to our <a>Terms & Privacy</a></p>
                     <button id="signup-button" type="submit">Submit</button>
+                </div>
+                <div class="message-container">
                 </div>                   
             </form>
-            <div class="message-container">
-                
-            </div>
+            
         </main>
         <script src="js/Signup.js"></script>
         <script src="js/User.js"></script>
         <script src="js/Database.js"></script>
-        <!-- <script src="js/Validator.js"></script> -->
+        <script src="js/Validator.js"></script>
     </body>
 </html>
