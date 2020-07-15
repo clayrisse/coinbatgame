@@ -14,11 +14,11 @@ body {
 }
 
 .formbody{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.24) 30%, rgba(0, 0, 0, 0.678) 45%,rgba(0, 0, 0, 0.63) 100%), url(background-coinbat.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.363) 30%, rgba(0, 0, 0, 0.486) 45%,rgba(0, 0, 0, 0.63) 100%), url(background-coinbat.jpg);
 
 }
 .messagebody{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(0, 0, 0, 0.795) 20%, rgba(0, 0, 0, 0.932) 30%, rgba(0, 0, 0, 0.98) 80%,rgba(0, 0, 0, 0.849) 100%), url(background-coinbat.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(0, 0, 0, 0.459) 20%, rgba(0, 0, 0, 0.932) 30%, rgba(0, 0, 0, 0.98) 80%,rgba(0, 0, 0, 0.849) 100%), url(background-coinbat.jpg);
 
 }
 /* h3 MESSAGE PAGE cambiar de sitio en css*/
@@ -76,7 +76,7 @@ a {
   text-align: center;
   margin:  auto;
   width: 90vw;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 40vh -15px 0;
 }
 #histoyrules {
@@ -93,9 +93,15 @@ a {
 footer {
   background-color: rgba(0, 0, 0, 0.596);
   height: 15vh;
-  
+}
+.allplayerinfo {
+  display: flex;
   
 }
+.playericonhome {
+  height: 50px;
+}
+
 -/*-------C H O O S E   P L A Y E R ------------*/
 .player-page {
   background-color: yellow;
@@ -160,10 +166,13 @@ footer {
       background-color: blueviolet;
       height: 30%;
       display: flex;
-      flex-wrap: wrap
+      flex-wrap: wrap;
     }
     .fliplingspace {
       background-color: burlywood;
+    }
+    #thecoin {
+      max-width: 200px ;
     }
       
         .playeravatar {
@@ -227,12 +236,12 @@ form {
   font-family: verdana, helvetica;
   font-size: 2rem;
   text-align: right;
-  margin: 30px auto 60px;
+  margin: 30px auto 60px ;
   width: 80%;
   max-width: 450px;
 }
 form div {
-  margin: -.8rem 0;
+  /* margin: -.8rem 0; */
 }
 
 
@@ -264,7 +273,7 @@ form a {
   color: rgba(255, 220, 62, 0.733); 
   text-align: center;
   font-size: .8rem;
-  margin: 0;
+  margin: 0 auto;
 }
 
 button {

@@ -33,36 +33,46 @@
         </header>
        
         <main>
-            <h1>Hello</h1>
-            <div id="playboard" class="board">                
-                <div id="player1" class="player"> <!-- player 1 -->
+           
+            <div id="playboard" class="board">           
+                <!-- ------------------player 1--------------------------- -->     
+                <div id="player1" class="player"> 
                     <div id="p1avatar" class="playeravatar">
-                        <figure>
-                            <img id="p1img" class="playerimg" src="assets/img/logo-mortalcoinbat.png">
+                        <figure id="battle-player1-img" class="playerimg"> 
+            <!--buscar foto en index.html con el id #sonya <img>
+                meter la foto en el <figure> id="battle-player1-img" de coinbat.html
+                quitar clases y id que tenga -->
+                            <img src="assets/img/p-kitana.jpg">
                         </figure>
                         <p>B O R R A R</p>
                     </div>
-                    <div id="p1stats" class="playerstats">
+                    <div id="battle-player1-stats" class="playerstats">
                         <div id="p1ref" class="playerref">
                             <p>B O R R A R</p>
                         </div>
-                        <div id="p1wincount" class="wincount">
+                        <div id="battle-player1-wincount" class="wincount">
                             <p>B O R R A R</p>
-                        </div>
-                        <div id="p1name" class="statsname">
+                                </div>
+
+            <!--buscar "nombre" en index.html con el id #sonya <h3>
+                meter "nombre" en el  <div id="battle-player1-name"> de coinbat.html-->                    
+          
+                        <div id="battle-player1-name" class="statsname">
                             <h3>Username 1</h3>
                         </div>
                     </div>
                 </div>
-                
+                <!-- ----------F U C K I N G    C O I N ------------------ -->
                 <div id="fliplingspace" class="fliplingspace"><!-- fliping coin -->
-                    <img id="p1img" class="coinimg" src="assets/img/logocoin-mortalcoinbat.png">
+                    <figure id="battle-coin-img" class="coinimg">
+                        <img id="thecoin" src="assets/img/logocoin-mortalcoinbat.png">
+                    </figure>
                 </div>
-                
+                <!-- ------------------player 2--------------------------- -->
                 <div id="player2" class="player reverse"> <!-- player 2  recordar el reverse-->
                     <div id="p2avatar" class="playeravatar">
-                        <!-- <figure>1 -->
-                        <p>B O R R A R</p>
+                        <img id="p1img" class="playerimg" src="assets/img/p-kitana.jpg">
+                        <!-- <p>B O R R A R</p> -->
                     </div>
                     <div id="p2stats" class="playerstats reversestats">
                         <div id="p2name" class="statsname">
@@ -92,6 +102,6 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         -->
-        
+        <script src="js/coinbat.js"></script>
     </body>
 </html>

@@ -11,7 +11,7 @@ window.addEventListener("load",()=>  {
     sonyaButton.addEventListener('click', () => pickedPlayer2("sonya"));  
     
     // button rayden
-    const raydinButton = document.querySelector('.btn-raiden');
+    const raidenButton = document.querySelector('.btn-raiden');
     raidenButton.addEventListener('click', () => pickedPlayer2("raiden"));  
     
     // button liu
@@ -38,12 +38,12 @@ window.addEventListener("load",()=>  {
 
 
 
-pickedPlayer2 (player2) {
+function pickedPlayer2 (player2) {
     const urlParams = new URLSearchParams(window.location.search);
     const player1 = urlParams.get('player1');
-    redirect = () => {
+    
       setTimeout( ()=> location.assign(`coinbat.html?player1=${player1}&player2=${player2}`), 1000);
-    }
+    
 
 }
     
