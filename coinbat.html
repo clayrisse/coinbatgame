@@ -15,7 +15,6 @@
         -->
         <title>Mortal Coinbat</title>
     </head>
-
     <body>
         <header>
             <!--navbar ej. <a href="#projects" class="dropdown-item">Project 1</a>   <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#contact">Contact</a></li>-->
@@ -23,7 +22,7 @@
                 <div class="" id="nav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="" href="coinbat.html">Fight</a></li>
+                        <li class="nav-item"><a class="" href="player1.html">Fight</a></li>
                         <li class="nav-item"><a class="" href="login.html">Log in</a></li>
                         <li class="nav-item"><a class="" href="signup.html">Sign up</a></li>
                     </ul>
@@ -34,29 +33,19 @@
        
         <main>
            
-            <div id="playboard" class="board">           
+            <section id="playboard" class="board">           
                 <!-- ------------------player 1--------------------------- -->     
                 <div id="player1" class="player"> 
-                    <div id="p1avatar" class="playeravatar">
-                        <figure id="battle-player1-img" class="playerimg"> 
-            <!--buscar foto en index.html con el id #sonya <img>
-                meter la foto en el <figure> id="battle-player1-img" de coinbat.html
-                quitar clases y id que tenga -->
-                            <img src="assets/img/p-kitana.jpg">
-                        </figure>
-                        <p>B O R R A R</p>
+                    <div id="p1avatar" class="playeravatar1">
+                        <img id="battle-player1-img" class="playerimg" src="assets/img/p-kitana.jpg">
                     </div>
-                    <div id="battle-player1-stats" class="playerstats">
+                    <div id="battle-player1-stats" class="playerstats1">
                         <div id="p1ref" class="playerref">
-                            <p>B O R R A R</p>
                         </div>
+                        <!-- -------- -->
                         <div id="battle-player1-wincount" class="wincount">
-                            <p>B O R R A R</p>
-                                </div>
-
-            <!--buscar "nombre" en index.html con el id #sonya <h3>
-                meter "nombre" en el  <div id="battle-player1-name"> de coinbat.html-->                    
-          
+                        </div>     
+                        <!-- -------- -->             
                         <div id="battle-player1-name" class="statsname">
                             <h3>Username 1</h3>
                         </div>
@@ -70,23 +59,25 @@
                 </div>
                 <!-- ------------------player 2--------------------------- -->
                 <div id="player2" class="player reverse"> <!-- player 2  recordar el reverse-->
-                    <div id="p2avatar" class="playeravatar">
-                        <img id="p1img" class="playerimg" src="assets/img/p-kitana.jpg">
-                        <!-- <p>B O R R A R</p> -->
+                    <div id="p2avatar" class="playeravatar2">
+                        <img id="battle-player2-img" class="playerimg" src="assets/img/p-kitana.jpg">
                     </div>
-                    <div id="p2stats" class="playerstats reversestats">
+                    <div id="battle-player2-name" class="playerstats2 reversestats">
                         <div id="p2name" class="statsname">
                             <h3>Username 2</h3>
                         </div>
-                        <div id="p2wincount" class="wincount">
-                            <p>B O R R A R</p>
+                        <!-- -------- -->
+                        <div id="battle-player2-wincount" class="wincount">
                         </div>
-                        <div id="p2ref" class="playerref">
-                            <p>B O R R A R</p>
+                        <!-- -------- -->
+                        <div id="battle-player2-stats" class="playerref">
                         </div>
                     </div>
                 </div>
-            
+            </section>
+            <div>
+                <img class="battleplayer-logo" src="assets/img/logoletters-mortalcoinbat.png" alt="player">  
+            </div>
         </main>
         <!-- footer -->
         <!-- <footer class="">

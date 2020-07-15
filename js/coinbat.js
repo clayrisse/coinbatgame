@@ -41,36 +41,68 @@ const players = {
 
 
 
-
-
-// //for display
-// function searchRenderInfoPlayer1() {
-//   <!--buscar foto en index.html con el id #sonya <img>
-//   meter la foto en el <figure> id="battle-player1-img" de coinbat.html
-//   quitar clases y id que tenga -->
-//   <!--buscar "nombre" en index.html con el id #sonya <h3>
-//   meter "nombre" en el  <div id="battle-player1-name"> de coinbat.html-->
-
-//   e.g.
-//   function renderMushrooms() {
-//     // Iteration 1: set the visibility of `<section class="mushroom">`
-//     document.querySelectorAll('.mushroom').forEach(oneMushroom => {
-//       if (state.mushrooms) {
-//         oneMushroom.style.visibility = 'visible';
-//       } else {
-//         oneMushroom.style.visibility = 'hidden';
-//       }
-//     });
-//   }
+// function renderSetUp() {
+//   renderImageP1();
+//   renderImageP2();
+//   renderNameP1();
+//   renderNameP2();
 // }
 
-//for display
-function searchRenderInfoPlayer1() {}
+function renderPage(player1, player2) {
+  const main = document.createElement('main');
+  article.innerHTML = `          
+  <section id="playboard" class="board">           
+  <!-- ------------------player 1--------------------------- -->     
+  <div id="player1" class="player"> 
+      <div id="p1avatar" class="playeravatar1">
+          <img id="battle-player1-img" class="playerimg" src="${players.player1.imgpath}">
+      </div>
+      <div id="battle-player1-stats" class="playerstats1">
+          <div id="p1ref" class="playerref">
+          </div>
+          <!-- -------- -->
+          <div id="battle-player1-wincount" class="wincount">
+          </div>     
+          <!-- -------- -->             
+          <div id="battle-player1-name" class="statsname">
+              <h3>${players.player1.name}</h3>
+          </div>
+      </div>
+  </div>
+  <!-- ----------F U C K I N G    C O I N ------------------ -->
+  <div id="fliplingspace" class="fliplingspace"><!-- fliping coin -->
+      <figure id="battle-coin-img" class="coinimg">
+          <img id="thecoin" src="assets/img/logocoin-mortalcoinbat.png">
+      </figure>
+  </div>
+  <!-- ------------------player 2--------------------------- -->
+  <div id="player2" class="player reverse"> <!-- player 2  recordar el reverse-->
+      <div id="p2avatar" class="playeravatar2">
+          <img id="battle-player2-img" class="playerimg" src="${players.player2.imgpath}">
+      </div>
+      <div id="battle-player2-name" class="playerstats2 reversestats">
+          <div id="p2name" class="statsname">
+              <h3>${players.player2.name}</h3>
+          </div>
+          <!-- -------- -->
+          <div id="battle-player2-wincount" class="wincount">
+          </div>
+          <!-- -------- -->
+          <div id="battle-player2-stats" class="playerref">
+          </div>
+      </div>
+  </div>
+</section>
+<div>
+  <img class="battleplayer-logo" src="assets/img/logoletters-mortalcoinbat.png" alt="player">  
+</div>
+  `;
 
-function searchRenderInfoPlayer2() {}
 
+  console.log(article)
+  section.appendChild(main);
 
-
+}
 
 
 let winPlayer1 = 0;
@@ -98,10 +130,12 @@ function coinFlip() {
     winnerCheck()
   }
 }
-// }  
+
+
+
 function winnerCheck() {
   if (winPlayer1 != 3 && winPlayer2 != 3) {
-      console.log(`nadie lleva 2 y aca deberia parar para ejecutar otro click`)
+      console.log(`nadie lleva 3 y aca deberia parar para ejecutar otro click`)
       
     // ----------------------------clean win player 1 
   } else if (winPlayer1 == 3 && winPlayer2 == 0 ) {
@@ -176,19 +210,6 @@ const player2 = urlParams.get('player2');
 
 
 
-  const coinFlipObj = document.querySelector('#battle-player1-img');
+  const coinFlipObj = document.querySelector('#thecoin');
   coinFlipObj.addEventListener('click', coinFlip);
 
-
-  // coinFlipObj.removeEventListener('click', () => coinFlip());
-  
-//   'use strict';
-
-//     clickTarget.removeEventListener('click',
-//         makeBackgroundYellow,
-//         false
-//     );
-//     clickTarget.addEventListener('click',
-//     makeBackgroundYellow,
-//     false
-// );

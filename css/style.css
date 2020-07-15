@@ -138,8 +138,12 @@ footer {
   margin: 0 auto;
   
 }
-.player-menu {
-  background-color: rgba(0, 0, 0, 0.74);
+.player-menu1 {
+  background-color: rgba(68, 19, 19, 0.514);
+  padding: 15px 0px;
+}
+.player-menu2 {
+  background-color: rgba(40, 41, 16, 0.527);
   padding: 15px 0px;
 }
 #chooseplayer img{
@@ -148,64 +152,112 @@ footer {
 }
 
 #chooseplayer img:hover {
-  transform: scale(1.5)
+  transform: scale(1.9);  
 }
 
 /*------*/
 
 
 /*----------F I G H T   S T U F F ------------*/
+/*--1/1----------------------------BOARD*/
 .board {
-  background-color: blue;
-  width: 90%;
-  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.712);
+  max-height: 80%;
+  max-width: 800px;
   height: 50%;
-  margin: 0 auto;
+  padding: 30px 30px; /*cambiar n media query 50 o algo asi*/
+  margin: 3.5rem auto 0rem auto; /*cambiar n media query 8 o 10%*/
 }
-    .player {
-      background-color: blueviolet;
+/*--1/3--------------------board SECTIONS*/
+.player {
+  /* background-color: rgb(255, 255, 255); */
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fliplingspace {
+  /* background-color: rgba(7, 7, 7, 0.795); */
+  height: 50%;
+  margin: -10px
+}
+  /*----------areas background sizes and DETAILS */
+    /* .coinimg {  square where coin is     
       height: 30%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .fliplingspace {
-      background-color: burlywood;
-    }
-    #thecoin {
+    } */
+    #thecoin {  /*actual coin is*/
       max-width: 200px ;
     }
       
-        .playeravatar {
-          background-color: cornsilk;
-          flex-grow: 1;
+    .playeravatar1 { /*square where avatar is*/ 
+      /* background-color: cornsilk; */
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-start; 
+
+    }
+    .playeravatar2 { /*square where avatar is*/ 
+      /* background-color: cornsilk; */
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end; 
+
+    }
+    .playerstats1 {  /*square where stats are*/ 
+      /* background-color: darkgreen; */
+      text-align: right;
+      /* display: flex; */
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 12;   
+    }
+    .playerstats2 {  /*square where stats are*/ 
+      /* background-color: darkgreen; */
+      text-align: right;
+      /* display: flex; */
+      flex-direction: column;
+      
+      align-items: flex-end;
+
+      flex-grow: 12;   
+    }
+        /*--------------------------stats single bar*/
+        .playerref {
+          background-color: rgba(155, 156, 155, 0.356);
+          height: 8px; /*cambiar a %*/
         }
-        .playerstats{
-          background-color: darkgreen;
-          text-align: right;
-          /* display: flex; */
-          flex-direction: column;
-          align-items: flex-start;
-          flex-grow: 2;
+        .wincount {
+          background-color: rgba(251, 255, 0, 0.904);
+          height: 10px; /*cambiar a %*/
+        } 
+        .statsname {
+          /* background-color: rgb(19, 19, 18); */
+          color: rgb(228, 222, 46);
+         
+        }
+        .statsname h3 {
+          /* background-color: rgb(19, 19, 18); */
+          color: rgb(192, 191, 168);
+          font-size: 1.2rem;
+        }
+        .playerimg {
+          text-align: ;
+          display: flex;
+
+          width: 120px;
+        }
+    
+        .battleplayer-logo{
+          min-width: 300px;
           
-        }
-            .playerref {
-              background-color: rgb(155, 156, 155);
-            }
-            .wincount {
-              background-color: rgb(251, 255, 1);
-            } 
-            .statsname {
-              /* background-color: rgb(19, 19, 18); */
-              color: rgb(235, 234, 201);
-            }
-            .playerimg {
-              display: flex;
-              height: 150px;
-            }
-            .coinimg {
-              
-              height: 300px;
-            }
+          width: 30%; 
+          margin: 5PX 0px 0px;
+        } 
+
+
+
+
+        
+    /*----------    REVERSE of 2nd player */        
     .reverse {
       flex-direction: row-reverse;
     }
@@ -222,7 +274,7 @@ footer {
     }
 
 
-/*----------F O R M S   S T U F F ------------*/
+/*----------F O R M S   S T U F F s------------*/
 .titlepage {
   color:rgba(209, 199, 148, 0.87); 
   font-family: 'Montaga', serif;
@@ -241,7 +293,7 @@ form {
   max-width: 450px;
 }
 form div {
-  /* margin: -.8rem 0; */
+  margin: -.8rem 0;
 }
 
 
@@ -257,7 +309,7 @@ form div {
   color:rgb(196, 193, 178);
   font-size:0.8rem;
   width: 100%;
-  padding: 10px 4px;
+  padding: 10px 0px 10px 0px;
   margin: 40px 0 0 ;
   border: 0px ;
   text-align: left;
@@ -289,7 +341,7 @@ button {
 }
 
 
-
+/* -----------M E D I A   Q U E R Y S---------*/
 
  @media (min-width: 576px){
   .choosetext {
@@ -300,6 +352,20 @@ button {
    
     margin: 15% 0px 0px;
   } 
+  .playerimg {
+   
+    width: 150px;
+  }
+  .fliplingspace {
+    
+    margin: -50px
+  }
+  #thecoin {  /*actual coin is*/
+    max-width: 220px ;
+  }
+  .statsname h3 {
+    font-size: 1.5rem;
+ }
  }
 
 
@@ -319,5 +385,23 @@ button {
   .choose2 {
     font-size: 2.8rem;
     text-align: right;
+  }
+  .playerimg {
+     width: 180px;
+  }
+  .fliplingspace {
+    
+    margin: -60px
+  }
+  #thecoin {  /*actual coin is*/
+    max-width: 240px ;
+  }
+  .board {
+
+    padding: 30px 400px; /*cambiar n media query 50 o algo asi*/
+    margin: 5rem auto 1.5rem auto; /*cambiar n media query 8 o 10%*/
+  }
+  .statsname h3 {
+     font-size: 1.8rem;
   }
 }
