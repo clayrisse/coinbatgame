@@ -21,6 +21,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(0, 0, 0, 0.459) 20%, rgba(0, 0, 0, 0.932) 30%, rgba(0, 0, 0, 0.98) 80%,rgba(0, 0, 0, 0.849) 100%), url(background-coinbat.jpg);
 
 }
+
 /* h3 MESSAGE PAGE cambiar de sitio en css*/
 h3 { 
   color: white

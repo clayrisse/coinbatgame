@@ -14,7 +14,14 @@ const players = {
 
 //----------------no borrar esto nunca!
 let coinFlipObj;
+
+const urlParams = new URLSearchParams(window.location.search);
+const player1 = urlParams.get('player1');
+const player2 = urlParams.get('player2');
 //------------------------------------
+
+
+
 
 
 function renderPage(player1, player2) {
@@ -175,14 +182,6 @@ function messageWinHitPlayer1() {
   //render 
 
 }
-
-
-
-
-
-const urlParams = new URLSearchParams(window.location.search);
-const player1 = urlParams.get('player1');
-const player2 = urlParams.get('player2');
 
 
 

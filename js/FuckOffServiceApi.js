@@ -15,15 +15,47 @@ const players = {
 // let winMessage2 = `Poin for ${play2}`
 // let flawlessVictoryMsg = "Flawless Victory" 
 
-
 const urlParams = new URLSearchParams(window.location.search);
-const winner = urlParams.get('winner');
+const loser = urlParams.get('loser');
 const flawlessV = urlParams.get('flawlessV');
 
 
 
-function fuckOff () {
 
+ 
+window.addEventListener('load', () => {
+  showMessageLoser(loser)
+  showMessageFlawlessVictory(flawlessV)
+});
+
+
+function showMessageFlawlessVictory(flawlessV) {
+  // Iteration 1: set the visibility of `<section class="mushroom">`
+  let flawlessMessage = document.querySelector('#flawles-message')
+  console.log(flawlessV)  
+  if (flawlessV === "false") {
+      
+      flawlessMessage.remove()
+    }
+}
+
+
+function showMessageLoser(loser) {
+  // let oldMainGone =  document.querySelector('main')
+  // document.body.removeChild(oldMainGone);
+  const newLoser = document.createElement('section');
+ console.log(players[loser].name)
+ let mainx = document.getElementById('mainx')
+ console.log(mainx)
+  newLoser.innerHTML = `<h2>Dear loser, aka ${players[loser].name} </h2>`;
+ mainx.appendChild(newLoser);
+
+}
+
+
+
+function fuckOff () {
+console.log(loser)
   const section = document.querySelector(".fu-list");
 
   fetch(`https://www.foaas.com/operations/`)
@@ -55,11 +87,3 @@ fuckOff ();
 
 
 
-
-
-function pickedPlayer2 (player2) {
-  const urlParams = new URLSearchParams(window.location.search);
-  const player1 = urlParams.get('player1');
-  
-  setTimeout( ()=> location.assign(`coinbat.html?player1=${player1}&player2=${player2}`), 500);
-}
