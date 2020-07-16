@@ -1,14 +1,8 @@
 'use strict';
 
-
-// button johnny cage
-// const johnnyButton = document.querySelector('.btn-johnny');
-// johnnyButton.addEventListener('click', () => pickedPlayer1("johnny"));  
-
 // button sonya blade
 const johnnyButton = document.querySelector('.btn-johnny');
 johnnyButton.addEventListener('click', () => pickedPlayer1("johnny"));  
-
 
 // button sonya blade
 const sonyaButton = document.querySelector('.btn-sonya');
@@ -39,13 +33,9 @@ const kitanaButton = document.querySelector('.btn-kitana');
 kitanaButton.addEventListener('click', () => pickedPlayer1("kitana"));  
 
 
-
-
-
 function pickedPlayer1 (player1) {
       console.log(player1);
   setTimeout( ()=> location.assign(`player2.html?player1=${player1}`), 1000);
-
 }
 
 

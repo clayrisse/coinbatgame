@@ -29,7 +29,7 @@ const players = {
   johnny: { name: 'Johnny Cage', state: true, imgpath:'assets/img/p-johnny.jpg' },
   subzero: { name: 'Sub-Zero', state: true, imgpath:"assets/img/p-subzero.jpg" },
   sonya: { name: 'Sonya Blade', state: true, imgpath:"assets/img/p-sonya.jpg" },
-  Raiden: { name: 'Raiden', state: true, imgpath:"assets/img/p-raiden.jpg" },
+  raiden: { name: 'Raiden', state: true, imgpath:"assets/img/p-raiden.jpg" },
   liu: { name: 'Liu Kang', state: true, imgpath:"assets/img/p-liu.jpg" },
   Scorpio: { name: 'Scorpio', state: true, imgpath:"assets/img/p-scorpio.jpg" },
   kano: { name: 'Kano', state: true, imgpath:"assets/img/p-kano.jpg" },
@@ -49,13 +49,16 @@ const players = {
 // }
 
 function renderPage(player1, player2) {
+  let oldMainGone =  document.querySelector('main')
+  document.body.removeChild(oldMainGone);
   const main = document.createElement('main');
-  article.innerHTML = `          
+ console.log(players)
+  main.innerHTML = `          
   <section id="playboard" class="board">           
   <!-- ------------------player 1--------------------------- -->     
   <div id="player1" class="player"> 
       <div id="p1avatar" class="playeravatar1">
-          <img id="battle-player1-img" class="playerimg" src="${players.player1.imgpath}">
+        <img id="battle-player1-img" class="playerimg" src="${players[player1].imgpath}">
       </div>
       <div id="battle-player1-stats" class="playerstats1">
           <div id="p1ref" class="playerref">
@@ -65,7 +68,7 @@ function renderPage(player1, player2) {
           </div>     
           <!-- -------- -->             
           <div id="battle-player1-name" class="statsname">
-              <h3>${players.player1.name}</h3>
+              <h3>${players[player1].name}</h3>
           </div>
       </div>
   </div>
@@ -78,11 +81,11 @@ function renderPage(player1, player2) {
   <!-- ------------------player 2--------------------------- -->
   <div id="player2" class="player reverse"> <!-- player 2  recordar el reverse-->
       <div id="p2avatar" class="playeravatar2">
-          <img id="battle-player2-img" class="playerimg" src="${players.player2.imgpath}">
+          <img id="battle-player2-img" class="playerimg" src="${players[player2].imgpath}">
       </div>
       <div id="battle-player2-name" class="playerstats2 reversestats">
           <div id="p2name" class="statsname">
-              <h3>${players.player2.name}</h3>
+              <h3>${players[player2].name}</h3>
           </div>
           <!-- -------- -->
           <div id="battle-player2-wincount" class="wincount">
@@ -99,8 +102,8 @@ function renderPage(player1, player2) {
   `;
 
 
-  console.log(article)
-  section.appendChild(main);
+ 
+  document.body.appendChild(main);
 
 }
 
@@ -118,42 +121,73 @@ function coinFlip() {
   
   if (i % 2 === 0){ 
     winPlayer2 += 1
-    console.log(`flip no${counter} random es ${i} / gana p 2 winCount2:${winPlayer2}`)
-    // messageWinHitPlayer2()// SHOW message P2 Wins(i dont know how!) messageWinHitPlayer1()
-    // renderHit2()// add to graphic "health" bar one "hit"
+    console.log(`flip no${counter} random es ${i} / gana p2 winCount2:${winPlayer2}`);
+    renderHit1()
     winnerCheck()
   } else {
     winPlayer1 += 1
-    console.log(`flip no${counter} random es ${i} / gana p 1 winCount1:${winPlayer1}`)
-    // messageWinHitPlayer1()// SHOW message P2 Wins(i dont know how!) messageWinHitPlayer1()
-    // renderHit1()// add to graphic "health" bar one "hit"
+    console.log(`flip no${counter} random es ${i} / gana p1 winCount1:${winPlayer1}`);
+    renderHit2()
     winnerCheck()
   }
 }
 
+function renderHit1() {
+  let lifeBar2 =  document.querySelector('#battle-player2-wincount'); 
+  lifeBar2.style.width="33%"//pq esta mostrando esto
+
+  switch (winPlayer1) {
+    case 1:
+    lifeBar2.style.width="33%";
+    break;
+    case 2:
+    lifeBar2.style.width="66%";
+    break;
+    case 3:
+    lifeBar2.style.width="95%";
+    break;
+  } 
+}
+
+function renderHit2() {
+  let lifeBar1 =  document.querySelector('#battle-player1-wincount'); 
+  lifeBar1.style.width="33%"//pq esta mostrando esto
+  
+  switch (winPlayer2) {
+    case 1:
+    lifeBar1.style.width="33%";
+    break;
+    case 2:
+    lifeBar1.style.width="66%";
+    break;
+    case 3:
+    lifeBar1.style.width="95%";
+    break;
+  } 
+}
 
 
 function winnerCheck() {
   if (winPlayer1 != 3 && winPlayer2 != 3) {
-      console.log(`nadie lleva 3 y aca deberia parar para ejecutar otro click`)
+      console.log(`nadie lleva 3, vuelve a lanzar`)
       
     // ----------------------------clean win player 1 
   } else if (winPlayer1 == 3 && winPlayer2 == 0 ) {
-    console.log(`FlawlessVictory P2 winCount:${winPlayer2}`)
+    console.log(`FlawlessVictory P2 winCount:${winPlayer2}`);
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderFlawlessVictory()
     // renderVictoryPlayer1()
 
     // ----------------------------clean win player 2
   } else if (winPlayer2 == 3 && winPlayer1 == 0) {
-    console.log(`FlawlessVictory P1 winCount:${winPlayer1}`)
+    console.log(`FlawlessVictory P1 winCount:${winPlayer1}`);
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderFlawlessVictory()
     // renderVictoryPlayer2() 
 
     // ----------------------------dirty win player 1
   } else if (winPlayer1 == 3) {
-    console.log("gana 1")
+    console.log("gana 1");
     coinFlipObj.removeEventListener('click', coinFlip);
     //removeenetlistener
     // renderVictoryPlayer1()       
@@ -162,14 +196,10 @@ function winnerCheck() {
   } else if (winPlayer2 == 3) {
     console.log("gana 2")
     coinFlipObj.removeEventListener('click', coinFlip);
-    // renderVictoryPlayer2()
-     
+    // renderVictoryPlayer2()   
   } 
 } 
 
-
-// cuando llegue 3 agregat un boton que haga clear del event listener
-removeEventListener
 
 function messageWinHitPlayer1() {
  console.log( winMessage1) //dislay this
@@ -179,30 +209,11 @@ function messageWinHitPlayer2(){
   // winMessage2 //dislay this
 }
 
-function renderHit1() {
-
-}
-
-function renderHit2() {
-  
-}
-
 function renderFlawlessVictory() {
 
 }
 
 
-
-function renderWin1() {
-//   // Iteration 1: set the visibility of `<section class="mushroom">`
-//   document.querySelectorAll('.battle-player1-wincount').forEach(player1Hit => {
-//     if (players./*player*/.state) {  //chequear si es asi
-//       player1Hit.style.visibility = 'visible';
-//     } else {
-//       player1Hit.style.visibility = 'hidden';
-//     }
-//   });
-}
 
 const urlParams = new URLSearchParams(window.location.search);
 const player1 = urlParams.get('player1');
@@ -210,6 +221,11 @@ const player2 = urlParams.get('player2');
 
 
 
+ 
+window.addEventListener('load', () => {
+  renderPage(player1, player2);
   const coinFlipObj = document.querySelector('#thecoin');
   coinFlipObj.addEventListener('click', coinFlip);
 
+
+});

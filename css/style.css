@@ -187,7 +187,8 @@ footer {
     #thecoin {  /*actual coin is*/
       max-width: 200px ;
     }
-      
+/* CLAUDIA YOU STIL HAVE TO TO DO THE CSS OF THE F L I P I N G C O I N!!!!!    
+    
     .playeravatar1 { /*square where avatar is*/ 
       /* background-color: cornsilk; */
       display: flex;
@@ -195,7 +196,7 @@ footer {
       justify-content: flex-start; 
 
     }
-    .playeravatar2 { /*square where avatar is*/ 
+    .playeravatar2 { square where avatar is 
       /* background-color: cornsilk; */
       display: flex;
       flex-grow: 1;
@@ -246,12 +247,12 @@ footer {
           width: 120px;
         }
     
-        .battleplayer-logo{
-          min-width: 300px;
-          
-          width: 30%; 
-          margin: 5PX 0px 0px;
-        } 
+    .battleplayer-logo{
+      min-width: 300px;
+      
+      width: 30%; 
+      margin: 5PX 0px 0px;
+    } 
 
 
 
