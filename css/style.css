@@ -19,7 +19,6 @@ body {
 }
 .messagebody{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%, rgba(0, 0, 0, 0.932) 15%, rgba(0, 0, 0, 0.877) 90%,rgba(0, 0, 0, 0.596) 100%), url(./../assets/img/background-coinbat.jpg);
-
 }
 /* h3 MESSAGE PAGE cambiar de sitio en css*/
 h3 { 
