@@ -40,6 +40,5 @@ function pickedPlayer2 (player2) {
     const urlParams = new URLSearchParams(window.location.search);
     const player1 = urlParams.get('player1');
     
-    setTimeout( ()=> location.assign(`coinbat.html?player1=${player1}&player2=${player2}`), 1000);
+    setTimeout( ()=> location.assign(`coinbat.html?player1=${player1}&player2=${player2}`), 500);
 }
-    

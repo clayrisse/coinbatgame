@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
-
+  
   background: no-repeat center 5% fixed;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.911) 20%, transparent 30%, rgba(0, 0, 0, 0.308) 55%,rgba(0, 0, 0, 0.226) 100%), url(background-coinbat.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.911) 20%, transparent 30%, rgba(0, 0, 0, 0.308) 55%,rgba(0, 0, 0, 0.226) 100%), url(./../assets/img/background-coinbat.jpg);
   background-blend-mode: multiply; 
   height: 99vh;
   font-family: 'Montaga', serif;
@@ -14,12 +14,11 @@ body {
 }
 
 .formbody{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.363) 30%, rgba(0, 0, 0, 0.486) 45%,rgba(0, 0, 0, 0.63) 100%), url(background-coinbat.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.363) 30%, rgba(0, 0, 0, 0.425) 45%,rgba(0, 0, 0, 0.63) 100%), url(./../assets/img/background-coinbat.jpg);
 
 }
 .messagebody{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(0, 0, 0, 0.459) 20%, rgba(0, 0, 0, 0.932) 30%, rgba(0, 0, 0, 0.98) 80%,rgba(0, 0, 0, 0.849) 100%), url(background-coinbat.jpg);
-
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%, rgba(0, 0, 0, 0.932) 15%, rgba(0, 0, 0, 0.877) 90%,rgba(0, 0, 0, 0.596) 100%), url(./../assets/img/background-coinbat.jpg);
 }
 /* h3 MESSAGE PAGE cambiar de sitio en css*/
 h3 { 
@@ -70,36 +69,118 @@ a {
 }
 
 .fullview{
-  height: 90vh;
+  height: 100vh;
 }
 .homepagelogo{
   text-align: center;
   margin:  auto;
   width: 90vw;
-  max-width: 1000px;
+  max-width: 950px;
   margin: 40vh -15px 0;
 }
+#slogan {
+  background-color: rgba(204, 204, 174, 0.959);
+  color: rgb(49, 10, 10);
+  font-family: 'Anton', sans-serif;
+  padding: 80px 40px;
+}
+#slogan h2 {
+  font-size: 40px;
+}
+
+/*-------------------------------------*/
+
 #histoyrules {
-  background-color: rgba(41, 41, 41, 0.932);
-  height: 70vh;
-  margin: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  text-align: center;
+  /* margin: -50px; */
+  height: 100vh;
+}
+#histoyrules h2 {
+  color: rgb(230, 230, 212);
+  text-shadow: 6px 6px 5px #000000;
+  text-align: center;
+  margin: 0px 0px 0px;
+  padding: 50% 0px 15%;
+  font-size: 2rem;
+}
+#histoyrules p {
+  color: rgba(230, 230, 201, 0.959);
+  text-shadow: 6px 6px 5px #000000;
+  line-height: 20px;
+  font-size: 1.2rem;
+}
+
+/*-------------------------------------*/
+
+.histoyplayers {
+  background: no-repeat center 5% fixed;
+  background-size: cover;
+  background-image:  url(/assets/img/concrete-background.jpg);
+  background-blend-mode: multiply;
+  background-color: rgba(109, 109, 109, 0.507);;
+  /* height: 70vh; */
   
+  margin-top: 0px;
+  padding: 20px 0px 70px;
 }
-#histoyplayers {
-  background-color: rgb(158, 28, 28);
-  height: 70vh;
-  margin-top: -70px;
+.histoyplayers h2{
+  color: rgb(230, 230, 212);
+  text-shadow: 6px 6px 5px #000000;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  margin: 0px auto 0px;
+  padding: 3% 0px 3%;
+  font-size: 2.5rem;
+  max-width:1000px;
 }
+.histoyplayers h3{
+  color: rgb(230, 230, 212);
+  font-family: 'Anton', sans-serif;
+  text-shadow: 6px 6px 5px #000000;
+  text-align:right;
+  margin: 0px 0px 0px;
+  padding: 0% 5px 0%;
+  font-size: 1.3rem;
+}
+
+.allplayerinfo {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width:1500px;
+}
+.playerinfo {
+  background-color: rgba(139, 137, 109, 0.397);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+  height: 210px;
+  margin: 15px;
+  /* border: 5px outset; */
+ 
+}
+/* } */
+
+.playerinfo p {
+  text-align: right;
+  font-size: 15px;
+  color: rgb(233, 233, 233);
+  padding: 8px;
+  /* width: 100px; */
+}
+.playericonhome {
+width: 120px;
+padding-left: 5px;
+
+}
+
+/*-------------------------------------*/
 footer {
   background-color: rgba(0, 0, 0, 0.596);
   height: 15vh;
-}
-.allplayerinfo {
-  display: flex;
-  
-}
-.playericonhome {
-  height: 50px;
 }
 
 -/*-------C H O O S E   P L A Y E R ------------*/
@@ -115,7 +196,7 @@ footer {
   text-align: center;
   max-width: 1000px;
   
-  margin-top: 0px;
+  margin: 0.5rem auto 0px;
   /* margin: 20% 50px -70px */
   
 }
@@ -125,7 +206,7 @@ footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 0%, rgba(0, 0, 0, 0.74) 60% rgb(0, 0, 0) 100%);
   
   width: 30%; 
-  margin: 20% 0px 0px;
+  margin: 25% 0px 2px;
 } 
 .playersbody{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.959) 0%, rgba(0, 0, 0, 0.486) 4%,rgba(255, 255, 255, 0.945) 15%, rgba(0, 0, 0, 0.24) 30%, rgba(0, 0, 0, 0.678) 45%,rgba(0, 0, 0, 0.63) 100%);
@@ -139,11 +220,11 @@ footer {
   
 }
 .player-menu1 {
-  background-color: rgba(68, 19, 19, 0.514);
+  background-color: rgba(177, 19, 19, 0.562);
   padding: 15px 0px;
 }
 .player-menu2 {
-  background-color: rgba(40, 41, 16, 0.527);
+  background-color: rgba(81, 83, 20, 0.705);
   padding: 15px 0px;
 }
 #chooseplayer img{
@@ -152,7 +233,7 @@ footer {
 }
 
 #chooseplayer img:hover {
-  transform: scale(1.9);  
+  transform: scale(1.3);  
 }
 
 /*------*/
@@ -166,7 +247,7 @@ footer {
   max-width: 800px;
   height: 50%;
   padding: 30px 30px; /*cambiar n media query 50 o algo asi*/
-  margin: 3.5rem auto 0rem auto; /*cambiar n media query 8 o 10%*/
+  margin: 4.5rem auto 0rem auto; /*cambiar n media query 8 o 10%*/
 }
 /*--1/3--------------------board SECTIONS*/
 .player {
@@ -178,7 +259,7 @@ footer {
 .fliplingspace {
   /* background-color: rgba(7, 7, 7, 0.795); */
   height: 50%;
-  margin: -10px
+  margin: -2.5rem
 }
   /*----------areas background sizes and DETAILS */
     /* .coinimg {  square where coin is     
@@ -191,33 +272,33 @@ footer {
     
     .playeravatar1 { /*square where avatar is*/ 
       /* background-color: cornsilk; */
-      display: flex;
+      /* display: flex;
       flex-grow: 1;
-      justify-content: flex-start; 
+      justify-content: flex-start;  */
 
-    }
-    .playeravatar2 { square where avatar is 
-      /* background-color: cornsilk; */
+    
+    /* .playeravatar2 { square where avatar is 
+      background-color: white;
       display: flex;
       flex-grow: 1;
       justify-content: flex-end; 
 
-    }
+    } */
     .playerstats1 {  /*square where stats are*/ 
       /* background-color: darkgreen; */
       text-align: right;
       /* display: flex; */
       flex-direction: column;
-      align-items: flex-start;
+      
       flex-grow: 12;   
     }
     .playerstats2 {  /*square where stats are*/ 
       /* background-color: darkgreen; */
       text-align: right;
       /* display: flex; */
-      flex-direction: column;
+      /* flex-direction: column; */
       
-      align-items: flex-end;
+      align-self:  flex-end;
 
       flex-grow: 12;   
     }
@@ -227,7 +308,7 @@ footer {
           height: 8px; /*cambiar a %*/
         }
         .wincount {
-          background-color: rgba(251, 255, 0, 0.904);
+          background-color: rgba(228, 231, 61, 0.849);
           height: 10px; /*cambiar a %*/
         } 
         .statsname {
@@ -244,7 +325,7 @@ footer {
           text-align: ;
           display: flex;
 
-          width: 120px;
+          width: 130px;
         }
     
     .battleplayer-logo{
@@ -335,11 +416,34 @@ button {
   font-family: 'Montaga', serif;
   font-size: 1.4rem;
   padding: 10px;
-  margin: 40px 0px 0px;
+  margin: 40px 0px 20px;
   width: 170px;
   border: none;
   
 }
+#flawles-message {
+  color: rgb(219, 47, 47);
+  font-family: 'Montaga', serif;
+  margin: 2.5em 0px 0em;
+  font-size: 2.5rem;
+}
+
+#losermessage {
+  color: rgba(243, 211, 94, 0.74);
+  font-family: 'Montaga', serif;
+  margin: 1.8em 0px 0em;
+  font-size: 1.5rem;
+}
+#efiumessage{
+  color: rgb(248, 248, 248);
+  font-family: 'Anton', sans-serif;
+  margin: 0em 0px 0em;
+  font-size: 4rem;
+  
+}
+
+
+
 
 
 /* -----------M E D I A   Q U E R Y S---------*/
@@ -367,12 +471,58 @@ button {
   .statsname h3 {
     font-size: 1.5rem;
  }
- }
+  #slogan {
+    padding: 80px 50px;
+    line-height: 50px;
+  }
+  #slogan h2 {
+    font-size: 45px;
+  }
 
 
- @media (min-width: 992px){
+  #histoyrules {
+    background-color: rgba(0, 0, 0, 0.438);
+    text-align: center;
+    /* margin: -50px; */
+    height: 100vh;
+  }
+  #histoyrules h2 {
+    color: rgb(230, 230, 212);
+    text-shadow: 6px 6px 5px #000000;
+    text-align: center;
+    margin: 0px 0px 0px;
+    padding: 27% 0px 3%;
+    font-size: 2rem;
+  }
+  #histoyrules p {
+    color: rgba(230, 230, 201, 0.959);
+    text-shadow: 6px 6px 5px #000000;
+    line-height: 20px;
+    font-size: 1.2rem;
+  }
+
+  #flawles-message {
+    margin: 2.6em 0px 0em;
+    font-size: 3rem;
+  }
+  
+  #losermessage {
+    margin: 1.8em 0px 0em;
+    font-size: 1.5rem;
+  }
+  #efiumessage{
+    margin: 0em 0px 0em;
+    font-size: 5rem;
+    
+  }
+  
+
+}
+
+
+ @media (min-width: 992px) {
  
-  #chooseplayer img{
+  #chooseplayer img {
     width: 12%;
   }
   .choosetext{
@@ -388,21 +538,45 @@ button {
     text-align: right;
   }
   .playerimg {
-     width: 180px;
+     width: 170px;
   }
-  .fliplingspace {
+  /* .fliplingspace {
     
     margin: -60px
-  }
-  #thecoin {  /*actual coin is*/
+  } */
+  /* #thecoin {  
     max-width: 240px ;
-  }
+  } */
   .board {
 
-    padding: 30px 400px; /*cambiar n media query 50 o algo asi*/
-    margin: 5rem auto 1.5rem auto; /*cambiar n media query 8 o 10%*/
+    padding: 50px 300px; /*cambiar n media query 50 o algo asi*/
+    margin: 6rem auto 1.5rem auto; /*cambiar n media query 8 o 10%*/
   }
   .statsname h3 {
      font-size: 1.8rem;
   }
-}
+  #slogan {
+    padding: 80px 50px;
+    line-height: 50px;
+  }
+  #slogan h2 {
+    font-size: 45px;
+  }
+ 
+  
+ 
+  
+  #flawles-message {
+    margin: 2.6em 0px 0em;
+    font-size: 3rem;
+  }
+  
+  #losermessage {
+    margin: 1.7em 0px 0em;
+    font-size: 1.5rem;
+  }
+  #efiumessage{
+    margin: -1rem 0px 0em;
+    font-size: 6rem;
+    
+  }
