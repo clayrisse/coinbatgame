@@ -22,11 +22,6 @@ const player2 = urlParams.get('player2');
 
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
 function renderPage(player1, player2) {
   let oldMainGone =  document.querySelector('main')
   document.body.removeChild(oldMainGone);
