@@ -34,25 +34,35 @@ function showMessageFlawlessVictory(flawlessV) {
   let flawlessMessage = document.querySelector('#flawles-message')
   console.log(flawlessV)  
   if (flawlessV === "false") {
-      
-      flawlessMessage.remove()
+    let flawMessage =  document.querySelector('#flawles-message');
+    flawMessage.style.color="transparent";
+      // flawlessMessage.remove()
     }
 }
-
-
 function showMessageLoser(loser) {
-  // let oldMainGone =  document.querySelector('main')
-  // document.body.removeChild(oldMainGone);
-  const newLoser = document.createElement('section');
- console.log(players[loser].name)
- let mainx = document.getElementById('mainx')
- console.log(mainx)
-  newLoser.innerHTML = `<h2>Dear loser, aka ${players[loser].name} color="white" </h2>`;
- mainx.appendChild(newLoser);
+const sectionLoser = document.querySelector(".fu-list");
+console.log(players[loser].name)
+const flawlessArticle = document.createElement('article');
 
+flawlessArticle.innerHTML = `<h2 id="losermessage">Dear loser, aka ${players[loser].name}</h2>`;
+ 
+console.log(flawlessArticle)
+sectionLoser.appendChild(flawlessArticle);
 }
 
 
+//----------esto de abajo funciona pero lo agrefo despues del mensaje F..U
+// function showMessageLoser(loser) {
+//   // let oldMainGone =  document.querySelector('main')
+//   // document.body.removeChild(oldMainGone);
+//   let newLoser = document.createElement('section');
+//  console.log(players[loser].name)
+//  let mainx = document.getElementById('mainx')
+//  console.log(mainx)
+//   newLoser.innerHTML = `<h2 id="losermessage">Dear loser, aka ${players[loser].name}</h2>`;
+//  mainx.appendChild(newLoser);
+
+// }
 
 function fuckOff () {
 console.log(loser)
@@ -72,7 +82,7 @@ console.log(loser)
       // I do a random operation to pick one of the 10 messages and look specifically for that one
       let i = Math.floor(Math.random()*10);
       const article = document.createElement('article');
-      article.innerHTML = `<h1>${data[pickedMessages[i]].name}</h1>`;
+      article.innerHTML = `<h1 id="efiumessage">${data[pickedMessages[i]].name}</h1>`;
       // `<a href="https://www.foaas.com${data[1].url}"> go to special message ;)</a>`;
       
       console.log(article)

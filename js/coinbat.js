@@ -146,14 +146,14 @@ function winnerCheck() {
     console.log(`FlawlessVictory P2 winCount:${winPlayer2}`);
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderVictoryPlayer1()
-    setTimeout( ()=> location.assign(`fumessage.html?loser=${player1}&flawlessV=${true}`), 800);
+    setTimeout( ()=> location.assign(`fumessage.html?loser=${player1}&flawlessV=${true}`), 1000);
 
     // ----------------------------clean win player 2
   } else if (winPlayer2 == 3 && winPlayer1 == 0) {
     console.log(`FlawlessVictory P1 winCount:${winPlayer1}`);
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderVictoryPlayer2() 
-    setTimeout( ()=> location.assign(`fumessage.html?loser=${player2}&flawlessV=${true}`), 800);
+    setTimeout( ()=> location.assign(`fumessage.html?loser=${player2}&flawlessV=${true}`), 1000);
 
     // ----------------------------dirty win player 1
   } else if (winPlayer1 == 3) {
@@ -161,14 +161,14 @@ function winnerCheck() {
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderVictoryPlayer1()       
 
-    setTimeout( ()=> location.assign(`fumessage.html?loser=${player1}&flawlessV=${false}`), 800);
+    setTimeout( ()=> location.assign(`fumessage.html?loser=${player1}&flawlessV=${false}`), 1000);
 
     // ----------------------------dirty win player 2
   } else if (winPlayer2 == 3) {
     console.log("gana 2")
     coinFlipObj.removeEventListener('click', coinFlip);
     // renderVictoryPlayer2()   
-    setTimeout( ()=> location.assign(`fumessage.html?loser=${player2}&flawlessV=${false}`), 800);
+    setTimeout( ()=> location.assign(`fumessage.html?loser=${player2}&flawlessV=${false}`), 1000);
   } 
 } 
 
