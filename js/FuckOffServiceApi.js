@@ -47,7 +47,7 @@ function showMessageLoser(loser) {
  console.log(players[loser].name)
  let mainx = document.getElementById('mainx')
  console.log(mainx)
-  newLoser.innerHTML = `<h2>Dear loser, aka ${players[loser].name} </h2>`;
+  newLoser.innerHTML = `<h2>Dear loser, aka ${players[loser].name} color="white" </h2>`;
  mainx.appendChild(newLoser);
 
 }
