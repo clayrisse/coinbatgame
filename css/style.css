@@ -116,7 +116,7 @@ a {
 .histoyplayers {
   background: no-repeat center 5% fixed;
   background-size: cover;
-  background-image:  url(/assets/img/concrete-background.jpg);
+  background-image:  url(./../assets/img/concrete-background.jpg);
   background-blend-mode: multiply;
   background-color: rgba(109, 109, 109, 0.507);;
   /* height: 70vh; */
