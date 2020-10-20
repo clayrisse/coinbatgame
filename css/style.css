@@ -179,8 +179,11 @@ padding-left: 5px;
 
 /*-------------------------------------*/
 footer {
-  background-color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(0, 0, 0, 0.432);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
   height: 15vh;
+  padding-top:6px;
 }
 
 -/*-------C H O O S E   P L A Y E R ------------*/
@@ -267,6 +270,9 @@ footer {
     } */
     #thecoin {  /*actual coin is*/
       max-width: 200px ;
+    }
+    #thecoin:hover {
+      transform: scale(1.1);  
     }
 /* CLAUDIA YOU STIL HAVE TO TO DO THE CSS OF THE F L I P I N G C O I N!!!!!    
     
