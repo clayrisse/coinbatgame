@@ -102,9 +102,9 @@ https://trello.com/b/yU27jNu2/projecto-coinbat
 
 
 
-### **Github**
+### **Deploy**
 
-https://github.com/clayrisse/coinbatgame
+https://clayrisse.github.io/coinbatgame/
 
 
 
